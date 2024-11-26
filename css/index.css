@@ -1,0 +1,215 @@
+:root {
+    font-family: 'Jockey One';
+    --cor-primaria: #fddd84;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #A9484A;
+    --cor-quaternaria: #7F4B4C;
+    --cor-quinta: #544040;
+    --cor-sexta: #F5F5F5;
+    --cor-setima: #f6f6f6;
+    --cor-oitava: #F7E2A7;
+    --cor-nona: #c9b682;
+    --cor-bem-vindo: #D4E6F1;
+
+    --fonte-primaria: 'Jockey One';
+    --fonte-secundaria: 'Comic Sans MS', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-quinta);
+    text-align: center;
+}
+
+.welcome-screen h1 {
+    font-size: 3em;
+    color: var(--cor-sexta);
+}
+
+.view-menu-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: var(--cor-sexta);
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--fonte-primaria);
+}
+
+.view-menu-button:hover {
+    background-color: var(--cor-quaternaria);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75% 0% 0.35% 3%;
+    background-color: var(--cor-terciaria);
+}
+
+.header__image-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__image {
+    width: 80px;
+    height: 80px;
+}
+
+.header__text {
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--cor-secundaria);
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__menu__link {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    background: var(--cor-quaternaria);
+    border-color: var(--cor-secundaria);
+    border-radius: 15px;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 15px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.header__menu__link:hover {
+    background: var(--cor-quinta);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-buttons {
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.category-button {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 90px;
+    font-family: var(--fonte-primaria);
+    padding: 0 20px;
+    background: var(--cor-sexta);
+    border: none;
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px; 
+    margin: 10px auto; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.category-button:hover {
+    background: var(--cor-oitava);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.alimentos-list {
+    font-size: 24px;
+    width: 98%;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px auto;
+}
+
+.alimento-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor-setima);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
+
+.alimento-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.alimento-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.alimento-info p {
+    display:flex;
+}
+
+.alimento-valor {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-terciaria);
+    margin-right: 20px;
+}
+
+.alimento-details {
+    display: none;
+    padding: 10px;
+    background: var(--cor-setima);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.alimento-details img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.alimento-details div {
+    display: flex;
+    flex-direction: column;
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Smashing Burguers</title>
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
+</head>
+<body>
+    <div id="welcome-screen" class="welcome-screen"> 
+        <img src="./img/logo.png" alt="Logo Smashing" class="welcome-screen-image">
+        <h1>Bem-vindo ao Smashing Burguers</h1> 
+        <button id="view-menu-button" class="view-menu-button">Visualizar Cardápio</button> 
+    </div>
+    <header class="header">
+        <div class="header__image-text">
+            <img src="./img/logo.png" alt="Logo Smashing" class="header__image">
+            <span class="header__text">SMASHING BURGUERS</span>
+        </div>
+        <nav class="header__menu">
+            <a class="header__menu__link" href="./index.html">CARDÁPIO</a>
+            <a class="header__menu__link" href="./info.html">INFORMAÇÕES</a>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Categorias -->
+        <div class="category">
+            <button class="category-button" data-category="BURGUERS">BURGUERS</button>
+            <ul id="burguers-list" class="alimentos-list"></ul>
+        </div>
+        <div class="category">
+            <button class="category-button" data-category="BEBIDAS">BEBIDAS</button>
+            <ul id="bebidas-list" class="alimentos-list"></ul>
+        </div>
+        <div class="category">
+            <button class="category-button" data-category="PORCOES">PORÇÕES</button>
+            <ul id="porcoes-list" class="alimentos-list"></ul>
+        </div>
+        <div class="category">
+            <button class="category-button" data-category="COMBOS">COMBOS</button>
+            <ul id="combos-list" class="alimentos-list"></ul>
+        </div>
+        <div class="category">
+            <button class="category-button" data-category="SOBREMESAS">SOBREMESAS</button>
+            <ul id="sobremesas-list" class="alimentos-list"></ul>
+        </div>
+
+        <!-- Link para o arquivo JS -->
+        <script src="./scripts/index.js"></script> 
+    </main>
+</body>
+</html>

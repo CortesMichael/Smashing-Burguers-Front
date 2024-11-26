@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/create.css">
+    <title>Criar Alimento - Smashing Burguers</title>
+    <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__image-text">
+            <a href="javascript:history.back()">
+                <img src="./img/back-arrow.png" alt="Voltar" class="header__back-arrow">
+            </a>
+            <img src="./img/logo.png" alt="Logo Smashing" class="header__image">
+            <span class="header__text">CRIAR ALIMENTO</span>
+        </div>
+        <nav class="header__menu">
+            <a class="header__menu__link" href="./index.html">CARDÁPIO</a>
+            <a class="header__menu__link" href="./info.html">INFORMAÇÕES</a>
+        </nav>
+    </header>
+    <main class="manage-container">
+        <section class="manage-section">
+            <h2>Criar Novo Item</h2>
+            <form id="create-form">
+                <input type="text" id="create-nome" placeholder="Nome" required>
+                <input type="text" id="create-descricao" placeholder="Descrição" required>
+                <input type="text" id="create-imagem" placeholder="URL da Imagem" required>
+                <input type="number" id="create-valor" step="0.01" placeholder="Valor" required>
+                <select id="create-categoria" required>
+                    <option value="" disabled selected>Categoria</option>
+                    <option value="BURGUERS">Burguers</option>
+                    <option value="BEBIDAS">Bebidas</option>
+                    <option value="PORCOES">Porções</option>
+                    <option value="COMBOS">Combos</option>
+                    <option value="SOBREMESAS">Sobremesas</option>
+                </select>
+                <button type="submit">Criar</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts/create.js"></script>
+</body>
+</html>

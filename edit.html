@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/edit.css">
+    <title>Editar Alimento - Smashing Burguers</title>
+    <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__image-text">
+            <a href="javascript:history.back()">
+                <img src="./img/back-arrow.png" alt="Voltar" class="header__back-arrow">
+            </a>
+            <img src="./img/logo.png" alt="Logo Smashing" class="header__image">
+            <span class="header__text">EDITAR ALIMENTO</span>
+        </div>
+        <nav class="header__menu">
+            <a class="header__menu__link" href="./index.html">CARDÁPIO</a>
+            <a class="header__menu__link" href="./info.html">INFORMAÇÕES</a>
+        </nav>
+    </header>
+    <main class="manage-container">
+        <section class="manage-section">
+            <h2>Editar Item</h2>
+            <select id="edit-select" required>
+                <option value="" disabled selected>Selecione o Item</option>
+            </select>
+            <form id="edit-form">
+                <input type="text" id="edit-nome" placeholder="Nome">
+                <input type="text" id="edit-descricao" placeholder="Descrição">
+                <input type="text" id="edit-imagem" placeholder="URL da Imagem">
+                <input type="number" id="edit-valor" step="0.01" placeholder="Valor">
+                <select id="edit-categoria">
+                    <option value="" disabled selected>Categoria</option>
+                    <option value="BURGUERS">Burguers</option>
+                    <option value="BEBIDAS">Bebidas</option>
+                    <option value="PORCOES">Porções</option>
+                    <option value="COMBOS">Combos</option>
+                    <option value="SOBREMESAS">Sobremesas</option>
+                </select>
+                <button type="submit">Editar</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts/edit.js"></script>
+</body>
+</html>
